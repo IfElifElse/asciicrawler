@@ -1,3 +1,3 @@
-from dungeonclass import Dungeon
+from dungeon import Dungeon
 
 Dungeon().asciiDisplay()

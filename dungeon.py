@@ -1,7 +1,7 @@
 import random
-from roomclass import Room
-from coordclass import Coord
-from tileclass import Tile
+from room import Room
+from coord import Coord
+from tile import Tile
 
 class Dungeon(object):
   def __init__(self):
@@ -22,7 +22,8 @@ class Dungeon(object):
       timeout -= 1
       if timeout <= 0:
         break
-    self.rooms[0].makeConnection()
+    for room in self.rooms:
+        room.makeConnection()
 
   def addRoom(self):
     u = random.randint(2, self.height-7)

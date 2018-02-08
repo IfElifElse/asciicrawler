@@ -1,5 +1,5 @@
 import random
-from coordclass import Coord
+from coord import Coord
 
 oppDirMap = {
   "u": "d",

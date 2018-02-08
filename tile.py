@@ -1,4 +1,4 @@
-from coordclass import Coord
+from coord import Coord
 
 equivalents = {
   "empty": " ",
